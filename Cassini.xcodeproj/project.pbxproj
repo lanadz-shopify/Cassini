@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F3030076211E783B003969D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3030075211E783B003969D7 /* AppDelegate.swift */; };
-		F3030078211E783B003969D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3030077211E783B003969D7 /* ViewController.swift */; };
 		F303007B211E783B003969D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3030079211E783B003969D7 /* Main.storyboard */; };
 		F303007D211E783D003969D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F303007C211E783D003969D7 /* Assets.xcassets */; };
 		F3030080211E783D003969D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F303007E211E783D003969D7 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		F3030072211E783B003969D7 /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3030075211E783B003969D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3030077211E783B003969D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F303007A211E783B003969D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F303007C211E783D003969D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F303007F211E783D003969D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +52,6 @@
 		F3030074211E783B003969D7 /* Cassini */ = {
 			isa = PBXGroup;
 			children = (
-				F3030077211E783B003969D7 /* ViewController.swift */,
 				F3030079211E783B003969D7 /* Main.storyboard */,
 				F3030081211E783D003969D7 /* Info.plist */,
 				F3030087211E7856003969D7 /* Supporting Files */,
@@ -143,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3030078211E783B003969D7 /* ViewController.swift in Sources */,
 				F3030076211E783B003969D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
