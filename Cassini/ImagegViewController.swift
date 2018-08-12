@@ -9,15 +9,31 @@
 import UIKit
 
 class ImagegViewController: UIViewController {
-    @IBOutlet weak var imageView: UIImageView!
+    var imageView = UIImageView()
 
+    @IBOutlet weak var scrollView: UIScrollView! {
+        didSet {
+            scrollView.addSubview(imageView)
+        }
+    }
     var imageURL: URL? {
         didSet {
-            imageView.image = nil
+            image = nil
             if view.window != nil { // check if view is on screen
                 print("imageURL didSet")
                 fetchImage()
             }
+        }
+    }
+
+    private var image = UIImage? {
+        get {
+            return imageView.image
+        }
+        set {
+            imageView.image = newValue
+            imageView.sizeToFit()
+            scrollView.contentSize = imageView.frame.size
         }
     }
 
@@ -32,7 +48,7 @@ class ImagegViewController: UIViewController {
         if let url = imageURL {
             let urlContents = try? Data(contentsOf: url)
             if let imageData = urlContents {
-                imageView.image = UIImage(data: imageData)
+                image = UIImage(data: imageData)
             }
         }
     }
