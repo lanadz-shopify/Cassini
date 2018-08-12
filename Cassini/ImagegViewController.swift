@@ -8,13 +8,19 @@
 
 import UIKit
 
-class ImagegViewController: UIViewController {
+class ImagegViewController: UIViewController, UIScrollViewDelegate {
     var imageView = UIImageView()
 
     @IBOutlet weak var scrollView: UIScrollView! {
         didSet {
+            scrollView.minimumZoomScale = 1/25
+            scrollView.maximumZoomScale = 1.0
+            scrollView.delegate = self
             scrollView.addSubview(imageView)
         }
+    }
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
     }
     var imageURL: URL? {
         didSet {
