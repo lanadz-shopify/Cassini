@@ -18,16 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="APg-PL-qeD">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRK-pF-BnY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="667" translatesAutoresizingMaskIntoConstraints="NO" id="APg-PL-qeD">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="APg-PL-qeD" firstAttribute="top" secondItem="kRK-pF-BnY" secondAttribute="top" id="OOa-1E-UEL"/>
+                                    <constraint firstItem="APg-PL-qeD" firstAttribute="leading" secondItem="kRK-pF-BnY" secondAttribute="leading" id="Qn8-BV-oET"/>
+                                    <constraint firstItem="APg-PL-qeD" firstAttribute="trailing" secondItem="kRK-pF-BnY" secondAttribute="trailing" id="cgr-Lz-dRk"/>
+                                    <constraint firstItem="APg-PL-qeD" firstAttribute="bottom" secondItem="kRK-pF-BnY" secondAttribute="bottom" id="tYv-1Z-CEr"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="APg-PL-qeD" firstAttribute="top" secondItem="rMO-gg-KpG" secondAttribute="top" id="3bG-lQ-wMr"/>
-                            <constraint firstItem="APg-PL-qeD" firstAttribute="bottom" secondItem="rMO-gg-KpG" secondAttribute="bottom" id="6wG-Up-uTg"/>
-                            <constraint firstItem="APg-PL-qeD" firstAttribute="leading" secondItem="rMO-gg-KpG" secondAttribute="leading" id="GwK-qV-f1x"/>
-                            <constraint firstItem="APg-PL-qeD" firstAttribute="trailing" secondItem="rMO-gg-KpG" secondAttribute="trailing" id="bmr-U7-BCA"/>
+                            <constraint firstItem="kRK-pF-BnY" firstAttribute="top" secondItem="rMO-gg-KpG" secondAttribute="top" id="CPj-eC-SiD"/>
+                            <constraint firstItem="kRK-pF-BnY" firstAttribute="trailing" secondItem="rMO-gg-KpG" secondAttribute="trailing" id="DDH-Ts-DVW"/>
+                            <constraint firstItem="kRK-pF-BnY" firstAttribute="leading" secondItem="rMO-gg-KpG" secondAttribute="leading" id="LOG-0q-XyW"/>
+                            <constraint firstItem="kRK-pF-BnY" firstAttribute="bottom" secondItem="rMO-gg-KpG" secondAttribute="bottom" id="on3-Wk-kEv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cLJ-yr-mBV"/>
                     </view>
