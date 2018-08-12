@@ -26,7 +26,7 @@ class ImagegViewController: UIViewController {
         }
     }
 
-    private var image = UIImage? {
+    private var image: UIImage? {
         get {
             return imageView.image
         }
