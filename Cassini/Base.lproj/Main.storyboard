@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Imageg View Controller-->
+        <!--Cassini View Controller-->
         <scene sceneID="R4g-Vt-T2u">
             <objects>
-                <viewController id="E66-N9-qKK" customClass="ImagegViewController" customModule="Cassini" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="E66-N9-qKK" customClass="CassiniViewController" customModule="Cassini" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DZF-sB-hgD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,16 +26,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Cassini"/>
+                                        <connections>
+                                            <segue destination="5Qq-72-9YW" kind="showDetail" identifier="Cassini" id="Vm2-2L-yWZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIs-DQ-rpV">
                                         <rect key="frame" x="0.0" y="68" width="125" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Earth"/>
+                                        <connections>
+                                            <segue destination="5Qq-72-9YW" kind="showDetail" identifier="Earth" id="jbG-Pi-TsJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evK-kq-xXT">
                                         <rect key="frame" x="0.0" y="136" width="125" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Saturn"/>
+                                        <connections>
+                                            <segue destination="5Qq-72-9YW" kind="showDetail" identifier="Saturn" id="2lp-pB-g2W"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -80,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Fw-75-zIm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-673" y="969"/>
+            <point key="canvasLocation" x="-610" y="1037"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="lfz-td-OAl">
@@ -114,4 +123,7 @@
             <point key="canvasLocation" x="-1050" y="179"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2lp-pB-g2W"/>
+    </inferredMetricsTieBreakers>
 </document>
