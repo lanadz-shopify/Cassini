@@ -39,7 +39,7 @@ class ImagegViewController: UIViewController, UIScrollViewDelegate {
         set {
             imageView.image = newValue
             imageView.sizeToFit()
-            scrollView.contentSize = imageView.frame.size
+            scrollView?.contentSize = imageView.frame.size
         }
     }
 
@@ -61,8 +61,8 @@ class ImagegViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if imageURL == nil {
-            imageURL = DemoURLs.stanford
-        }
+//        if imageURL == nil {
+//            imageURL = DemoURLs.stanford
+//        }
     }
 }
